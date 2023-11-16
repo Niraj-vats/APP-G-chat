@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chat</title>
+  </head>
+  <body>
+    <header>
+      <div class="small_nav">
+        <div class="head_cont">
+          <div class="nav_start">
+            <i class="fa-solid fa-bars" onclick="ham()"></i>
+            <i class="fa-solid fa-message" style="color: #00ac47"></i>
+            <span>Chat</span>
+          </div>
+          <div class="nav_middle">
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search in chat" />
+            </div>
+          </div>
+          <div class="nav_end">
+            <button>
+              <i class="fa-solid fa-circle" style="color: #00ac47"></i> Active
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <i class="fa-regular fa-circle-question"></i>
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-list-ul"></i>
+            <div class="profile_pic">
+              <img src="profile.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="double">
+        <div class="small_chat">
+          <div class="small_chat_first">
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <span>A</span>
+            <div class="name_a"><span>Niraj</span><span>1 member</span></div>
+          </div>
+          <div class="small_chat_last">
+            <i class="fa-solid fa-message"></i>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main" style="display: flex">
+        <div class="hamburger">
+          <div class="chat">
+            <i class="fa-solid fa-caret-right"></i> Chat
+            <i class="fa-solid fa-plus" style="float: right"></i>
+          </div>
+          <div class="chat chat_space">
+            <div>
+              <i class="fa-solid fa-caret-right"></i> Spaces
+              <i class="fa-solid fa-plus" style="float: right"></i>
+            </div>
+            <div class="name"><span>N</span><span>Niraj</span></div>
+          </div>
+          <div class="chat"><i class="fa-solid fa-caret-right"></i> Meet</div>
+          <div class="chat_small">
+            <i
+              class="fa-solid fa-circle"
+              style="color: #00ac47"
+              id="active"
+            ></i>
+            Active
+          </div>
+          <div class="chat_small">
+            <i class="fa-solid fa-pencil"></i> Add a status
+          </div>
+          <div class="chat_small">
+            <i class="fa-solid fa-gear"></i> Settings
+          </div>
+          <div class="chat_small">
+            <i class="fa-solid fa-question"></i> Help and feedback
+          </div>
+        </div>
+        <div class="container" style="width: 100%">
+          <div class="upper">
+            <div class="big_chat">
+              <div class="big_chat_first">
+                <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <span>N</span>
+                <div class="big_name_a">
+                  <span
+                    >Niraj
+                    <i
+                      class="fa-solid fa-chevron-down"
+                      style="font-size: 15px"
+                    ></i></span
+                  ><span>1 member</span>
+                </div>
+              </div>
+              <div class="big_chat_last">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-rectangle-list"></i>
+                <i class="fa-regular fa-comment"></i>
+              </div>
+            </div>
+            <span id="blue">Chat</span><span>Tasks</span><span>Files</span>
+            <hr />
+          </div>
+          <div class="data">
+            <div class="text_small">
+              <span id="s_chat">Chat</span>
+              <span>Files</span>
+              <span>Tasks</span>
+            </div>
+            <div class="s_images">
+              <div class="space_img">
+                <img src="Images/chat.jpg" alt="" />
+                <span>You created this space yesterday</span>
+                <div class="space_btn">
+                  <button>
+                    <i class="fa-solid fa-user-plus"></i> Add people & apps
+                  </button>
+                  <button>
+                    <i class="fa-brands fa-google-drive"></i> Share a file
+                  </button>
+                  <button>
+                    <i class="fa-regular fa-circle-check"></i> Assign task
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="space_section">
+              <p><i class="fa-solid fa-clock-rotate-left"></i> HISTORY IS ON</p>
+              <span>Messages sent with history on are saved</span>
+            </div>
+            <div class="messages"></div>
+            <div class="space_search">
+              <i class="fa-solid fa-circle-plus"></i>
+              <div class="s_search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="msg" type="text" placeholder="History is on" />
+                <i class="fa-solid fa-a icon1"></i>
+                <i class="fa-regular fa-face-laugh"></i>
+                <i class="fa-regular fa-bookmark icon1"></i>
+                <i class="fa-solid fa-upload icon1"></i>
+                <i class="fa-solid fa-video icon1"></i>
+              </div>
+              <i class="fa-regular fa-image icon2"></i>
+              <i onclick="reply()" class="fa-regular fa-paper-plane"></i>
+            </div>
+          </div>
+          <div class="sidebar">
+            <img src="Images/caleder.jpg" alt="" />
+            <img src="Images/bulb.jpg" alt="" />
+            <img src="Images/task.jpg" alt="" />
+            <img src="Images/people.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7781686508.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

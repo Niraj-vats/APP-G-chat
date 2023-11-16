@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Google Chat</title>
+</head>
+<body>
+   <header>
+    <div class="head_cont">
+        <div class="nav_start">
+            <i class="fa-solid fa-bars" onclick=ham()></i>
+            <i class="fa-solid fa-message" style="color: #00ac47;"></i>
+            <span>Chat</span>
+        </div>
+        <div class="nav_middle">
+            <div class="search">
+                <i class="fa-solid fa-bars" onclick=ham()></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search in chat">
+                <img src="profile.jpg" alt="">
+            </div>
+        </div>
+        <div class="nav_end">
+            <button><i class="fa-solid fa-circle" style="color: #00ac47;"></i> Active <i class="fa-solid fa-chevron-down"></i></button>
+            <i class="fa-regular fa-circle-question"></i>
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-list-ul"></i>
+            <div class="profile_pic">
+                <img src="profile.jpg" alt="">
+            </div>
+        </div>
+    </div>
+   </header>
+   <main>
+    <div class="main" style="display: flex;">
+        <div class="hamburger">
+            <div class="chat"><i class="fa-solid fa-caret-right"></i> Chat <i class="fa-solid fa-plus" style="float: right;"></i></div>
+            <div class="chat chat_space">
+                <div>
+                    <i class="fa-solid fa-caret-right"></i> Spaces
+                    <i class="fa-solid fa-plus" style="float: right;"></i>
+                </div>
+                <a href="space.html" class="name">
+                    <span>A</span><span>Niraj</span>
+                </a>
+            </div>
+            <div class="chat"><i class="fa-solid fa-caret-right"></i> Meet</div>
+            <div class="chat_small"><i class="fa-solid fa-circle" style="color: #00ac47;" id="active"></i> Active</div>
+            <div class="chat_small"><i class="fa-solid fa-pencil"></i> Add a status</div>
+            <div class="chat_small"><i class="fa-solid fa-gear"></i> Settings</div>
+            <div class="chat_small"><i class="fa-solid fa-question"></i> Help and feedback</div>
+        </div>
+        <div class="container_main" style="width: 100%;">
+        
+            <div class="data">
+                <p class="heading_space">spaces</p>
+                <div class="s_text_small">
+                    <a href="space.html" >
+                        <span id="small_a">N</span><span style="color: black;">Niraj</span>
+                    </a>
+                    <span>Yesterday</span>
+                </div>
+                <div class="text">
+                    <p>Welcome, Niraj</p>
+                    <p>Ready? Set. Chat! Let's jump right into things.</p>
+                </div>
+                <div class="images">
+                    <div class="img">
+                        <img src="Images/pic1.jpg" alt="">
+                        <span>Send a message to a colleague or friend</span>
+                        <button>Start a chat</button>
+                    </div>
+                    <div class="img">
+                        <img src="Images/pic2.jpg" alt="">
+                        <span>Collaborate on projects with teams or groups</span>
+                        <button>Browse spaces</button>
+                    </div>
+                    <div class="img">
+                        <img src="Images/pic3.jpg" alt="">
+                        <span>Find tools to upgrade your workflows</span>
+                        <button>Explore apps</button>
+                    </div>
+                </div>
+                <div class="section">
+                    <p>Download the chat apps</p>
+                    <div class="links">
+                        <span><i class="fa-brands fa-google-play"></i> Play Store | </span>
+                        <span><i class="fa-brands fa-app-store-ios"></i> App Store | </span>
+                        <span><i class="fa-brands fa-chrome"></i> Web App</span>
+                    </div>
+                </div>
+            </div>
+            <div class="new_chat">
+                <button><i class="fa-solid fa-plus"></i> New space</button>
+            </div>
+            <div class="sidebar">
+                <img src="Images/caleder.jpg" alt="">
+                <img src="Images/bulb.jpg" alt="">
+                <img src="Images/task.jpg" alt="">
+                <img src="Images/people.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    
+   </main>
+   <footer>
+    <div class="footer">
+        <div class="footer_data">
+            <div class="foot_btn" >
+                <i class="fa-regular fa-message"></i>
+                <span>Chat</span>
+            </div>
+            <div class="foot_btn" >
+                <i class="fa-solid fa-people-group"></i>
+                <span>Spaces</span>
+            </div>
+        </div>
+    </div>
+   </footer>
+   <script src="script.js"></script>
+   <script src="https://kit.fontawesome.com/7781686508.js" crossorigin="anonymous"></script>
+</body>
+</html>
